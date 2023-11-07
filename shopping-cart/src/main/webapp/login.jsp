@@ -3,10 +3,31 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
+<%@include file="includes/head.jsp" %>
 <title>Login</title>
 </head>
 <body>
-<h1>Login</h1>
+<div class="container">
+    <div class="card" style="min-width: 320px;">
+        <div class="card-body">
+            <h4 class="card-title text-center">Login</h4>
+            <form action="">
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="text" name="email" id="email" class="form-control"/>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" class="form-control"/>
+                </div>
+                <div class="form-group text-center">
+                    <input type="submit" value="Login" class="btn btn-primary"/>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<%@include file="includes/footer.jsp" %>
 </body>
 </html>
