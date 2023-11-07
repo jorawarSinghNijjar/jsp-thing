@@ -1,3 +1,4 @@
+<%@page import="com.shopping.connection.DbConnection"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -11,7 +12,7 @@
     <div class="card" style="min-width: 320px;">
         <div class="card-body">
             <h4 class="card-title text-center">Login</h4>
-            <form action="">
+            <form action="/shopping-cart/LoginServlet" method="POST">
                 <div class="form-group">
                     <label for="email">Email</label>
                     <input type="text" name="email" id="email" class="form-control"/>
@@ -27,6 +28,8 @@
         </div>
     </div>
 </div>
+
+<% DbConnection.getConnection(); %>
 
 <%@include file="includes/footer.jsp" %>
 </body>

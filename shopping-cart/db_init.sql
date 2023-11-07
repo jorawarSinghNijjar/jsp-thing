@@ -27,3 +27,5 @@
 --     FOREIGN KEY (product_id) REFERENCES products(id) ON DELETE CASCADE,
 --     FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
 --     );
+
+INSERT INTO users VALUES ( 1,'test', 'test@test.com', '123');
