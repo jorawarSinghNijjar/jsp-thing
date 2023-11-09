@@ -9,7 +9,7 @@
 --     password VARCHAR(40),
 --     PRIMARY KEY (id)
 --     );
-    
+--     
 -- CREATE TABLE products (
 -- 	id INT AUTO_INCREMENT PRIMARY KEY,
 --     name VARCHAR(300),
@@ -28,4 +28,4 @@
 --     FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
 --     );
 
-INSERT INTO users VALUES ( 1,'test', 'test@test.com', '123');
+-- INSERT INTO users VALUES ( 1,'test', 'test@test.com', '123');
